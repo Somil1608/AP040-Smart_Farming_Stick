@@ -8,14 +8,18 @@ Our product/project consists of sensors like soil moisture and NPK sensor which 
 
 For detecting pests and diseases in realtime, the YOLOv5 Nano model was trained with a custom self-prepared dataset and was deployed on the HPS. The inference example is showcased in our video given below.
 
-
-
-
-
-   [Youtube link- Smart Farming Stick (SFS)](https://youtu.be/a4NGR79d7g0)
-
-
-
-
-
+[Youtube link- Smart Farming Stick (SFS)](https://youtu.be/a4NGR79d7g0)
 <img width="1038" alt="Screenshot 2022-04-17 at 10 38 01 PM" src="https://user-images.githubusercontent.com/97040159/163725055-b530e38f-fe91-4e0c-a815-9a7ed899535e.png">
+
+## Usage
+### FPGA
+1- The project name 'abc'(Forgive us for the nomenclature) is pre-compiled and ready for running
+2- Connect the moisture sensor and make sure the wiring is done properly to the ADC pins on the DE-10 Nano
+3- Install required drivers for the DE-10 Nano and run the .sh file in 'demo_batch' directory located in directory 'abc'
+4- If initiated properly, a terminal should pop up and show you the values.
+
+### HPS
+1- Place weights file 'best.pt'/'last.pt' in a directory.
+2- Connect a compatible webcam using OTG and install its drivers.
+3- Gitclone [Yolov5 official link](https://github.com/ultralytics/yolov5)and install requirements from yolov5 official github
+4- Run ``python detect.py --source 0`` from the terminal 
