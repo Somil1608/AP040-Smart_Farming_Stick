@@ -12,7 +12,7 @@ For detecting pests and diseases in realtime, the YOLOv5 Nano model was trained 
 
 
 
-                                   [Youtube link- Smart Farming Stick (SFS)](https://youtu.be/a4NGR79d7g0)
+   [Youtube link- Smart Farming Stick (SFS)](https://youtu.be/a4NGR79d7g0)
 
 
 
